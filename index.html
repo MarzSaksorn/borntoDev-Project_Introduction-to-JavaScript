@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="min-w-screen grid justify-center">
+    <div class="w-max-content p-10 pb-30 rounded-2xl grid justify-center mt-20 bg-slate-200/50">
+        <h1 class="text-center text-6xl">Thailand Tax Calculator</h1>
+        <input id="income" class="p-5 mt-10 bg-green-200 rounded-lg" type="number" placeholder="Put this year income here in Baht ฿">
+        <button class="p-3 w-min border rounded-lg mt-5 hover:bg-gray-200" onclick="taxcal()">Calculate</button>
+        <h1 class="text-center text-2xl mt-10">Your rough estimated tax will be</h1>
+        <h1 id="result" class="mt-10 text-6xl text-center"></h1>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
